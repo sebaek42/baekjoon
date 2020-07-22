@@ -73,6 +73,18 @@ void print_result(float *result, int C)
     }
 }
 
+void free_list(int **list, int C)
+{
+    int i = 0;
+    while (i < C)
+    {
+        free(list[i]);
+        list[i] = NULL;
+        i++;
+    }
+    free(list);
+}
+
 int main(void)
 {
     int C;
@@ -83,7 +95,7 @@ int main(void)
     init_list(&list, C);
     set_result(list, &result, C);
     print_result(result, C);
-    //free_list(list);
-    //free(result);
+    free_list(list, C);
+    free(result);
     return (0);
 }
