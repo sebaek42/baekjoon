@@ -8,4 +8,5 @@
 <div align=center>
   
 ![](https://github.com/sebaek42/sebaek42/blob/master/42ALGO.png?raw=true)
+(움짤추가)
 </div>
