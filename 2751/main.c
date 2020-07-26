@@ -10,7 +10,7 @@ void	swap(int **array, int a, int b)
 	(*array)[b] = tmp;
 }
 
-// 인덱스를 지정한 퀵소팅은 시간초과에서 걸림. 하나씩 비교해서 교체해주기때문
+// 인덱스를 지정한 퀵소팅은 시간초과에서 걸림. 하나씩 비교해서 교체해주기때문?
 // void	qsort_array(int left, int right, int **array)
 // {
 // 	int pivot = left;
@@ -73,6 +73,7 @@ int main(void)
 		scanf("%d", &array[i]);
 		i++;
 	}
+	//배열 - 개수 - 자료형크기 - 비교함수(const void *, const void *)
 	qsort(array, N, sizeof(int), compare);
 	print_array(array, N);
 	free(array);
