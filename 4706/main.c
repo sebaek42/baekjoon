@@ -16,16 +16,14 @@ void	init_list(t_list *list)
 {
 	while (1)
 	{
-		if (!(list->next = malloc(sizeof(t_list))))
-			return ;
 		scanf("%lf %lf", &list->A, &list->B);
 		if (list->A == 0 && list->B == 0)
-		{
-			list->next = NULL;
 			break ;
-		}
+		if (!(list->next = malloc(sizeof(t_list))))
+			return ;
 		list = list->next;
 	}
+	list = NULL;
 }
 
 void	get_V(t_list *list)
@@ -89,5 +87,8 @@ void	main_loop(void)
 int main()
 {
 	main_loop();
+	while (1)
+	{
+	}
 	return (0);
 }
