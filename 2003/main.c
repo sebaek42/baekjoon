@@ -29,10 +29,9 @@ int main()
 	int N;
 	int M;
 	int arr[10000];
-	int i;
+	int i = 0;
 
 	scanf("%d %d", &N, &M);
-	i = 0;
 	while (i < N)
 	{
 		scanf("%d", &arr[i]);
