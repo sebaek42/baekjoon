@@ -43,7 +43,7 @@ int  main()
 	}
 
 
-	printf("%d %d %d     \n", min, mid, max);
+	printf("%d %d %d      \n", min, mid, max);
 
 	}
 }
